@@ -68,7 +68,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ battery_perc,"󰂄 %s%% ",    "BAT1" },
     { battery_state, "%s | ",   "BAT1" },
-    { run_command, "%s | ",    "/home/delta/.local/bin/volbar" },
+    { run_command, "%s | ",    "~/.local/bin/volbar" },
     { cpu_perc,    " %s%% | ",  NULL },
 	{ temp,        " %s°C | ", "/sys/class/thermal/thermal_zone6/temp" },
     { ram_perc,    " %s%% | ",  NULL },	
