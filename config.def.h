@@ -66,5 +66,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime, "%s",           "%F %T" },
+	{ battery_perc,"󰂄 %s%% ",    "BAT1" },
+    { battery_state, "%s | ",   "BAT1" },
+    { run_command, "%s | ",    "/home/delta/.local/bin/volbar" },
+    { cpu_perc,    " %s%% | ",  NULL },
+	{ temp,        " %s°C | ", "/sys/class/thermal/thermal_zone6/temp" },
+    { ram_perc,    " %s%% | ",  NULL },	
+	{ disk_free,   " %s | ",    "/" },
+	{ datetime,       " %s",     "%a %Y-%m-%d %H:%M:%S" },  /* Wed 2026-04-16 14:30:45 */	
 };
